@@ -1,0 +1,73 @@
+@font-face{
+    font-family: effra-heavy;
+    src: url('./fonts/Effra Heavy.ttf');
+}@font-face{
+    font-family: effra-reg;
+    src: url('./fonts/Effra_Std_Rg.ttf')
+}
+body{-webkit-print-color-adjust: exact; }
+img{
+    margin-top: 5px;
+    width: 200px;
+    height: 100px;
+    margin-bottom: 10px;
+}.effra-heavy{
+    margin-top: 15px;
+    font-family: effra-heavy;
+    font-size: 3em;
+    padding-right: 0.5em;
+    vertical-align: middle;
+}.financiar{
+    font-family: effra-heavy;
+    font-size: 2em;
+}.hr{
+    border-top: 1px solid #2b2b2b;
+}.container:nth-of-type(3){
+    margin-top: 20px;
+}.effra>th{
+    font-family: effra-heavy;
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+    background: #0b71bc;
+}th, td{
+    border: 1px solid black;
+    width: 425px;
+    height: 70px;
+}tr{
+    text-align: center;
+    font-family: effra-reg;
+    font-size: 1em;
+}thead{
+    border: 1px solid black;
+}.table>tbody>tr>td,.table>thead>tr>th{
+    vertical-align: middle;
+}
+@media print{
+    body{-webkit-print-color-adjust:exact;}
+        th, td{
+        height: 10px;
+    }.container:nth-of-type(3){
+        margin-top: 05px;
+    }.financiar{
+        font-size: 1em;
+    }img{
+        width: 100px;
+        height: 45px;
+        margin-bottom: 02px;
+    }.effra-heavy{
+        margin-top: 7px;
+        font-size: 1.5em;
+    }
+    .table thead{background: #0b71bc;}
+    .effra>th{
+        font-size: 1em;
+        background: #0b71bc;
+    }.table>tbody>tr>td{
+        padding: 0;
+    }.container{
+        margin-top: 0;
+    }hr{
+        margin: 2px 0;
+    }
+}
